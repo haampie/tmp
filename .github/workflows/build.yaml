@@ -28,6 +28,9 @@ jobs:
         
       - name: Concretize
         run: spack -e . -v concretize
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
         
       - name: Install
         run: |
